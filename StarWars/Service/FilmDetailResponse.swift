@@ -8,7 +8,7 @@
 import Foundation
 
 struct FilmDetailResponse: Decodable {
-  let title: String
   let episodeId: Int
   let openingCrawl: String
+  let releaseDate: Date
 }
