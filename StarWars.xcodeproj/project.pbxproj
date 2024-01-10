@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E738F31B2B4EB44C00433E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E738F31A2B4EB44C00433E6E /* Assets.xcassets */; };
 		E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */; };
 		E7DCBFE32B4D460E00754DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E738F31A2B4EB44C00433E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7DCBFCD2B4D44AA00754DAD /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E738F3192B4EB44C00433E6E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E738F31A2B4EB44C00433E6E /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = SOURCE_ROOT;
+		};
 		E7DCBFC42B4D44AA00754DAD = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				E7DCBFE42B4D470A00754DAD /* Launch */,
+				E738F3192B4EB44C00433E6E /* Other */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E738F31B2B4EB44C00433E6E /* Assets.xcassets in Resources */,
 				E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
