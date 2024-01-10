@@ -52,6 +52,7 @@
 		E79519142B4F23670053FECA /* FilmDetail.State+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519132B4F23670053FECA /* FilmDetail.State+Equatable.swift */; };
 		E79519162B4F26020053FECA /* ModuleFactory+filmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519152B4F26020053FECA /* ModuleFactory+filmDetail.swift */; };
 		E79519182B4F26550053FECA /* FilmDetail+Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519172B4F26550053FECA /* FilmDetail+Screen.swift */; };
+		E795191A2B4F27420053FECA /* FilmDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519192B4F27420053FECA /* FilmDetailCoordinator.swift */; };
 		E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */; };
 		E7DCBFE32B4D460E00754DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,7 @@
 		E79519132B4F23670053FECA /* FilmDetail.State+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmDetail.State+Equatable.swift"; sourceTree = "<group>"; };
 		E79519152B4F26020053FECA /* ModuleFactory+filmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModuleFactory+filmDetail.swift"; sourceTree = "<group>"; };
 		E79519172B4F26550053FECA /* FilmDetail+Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmDetail+Screen.swift"; sourceTree = "<group>"; };
+		E79519192B4F27420053FECA /* FilmDetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailCoordinator.swift; sourceTree = "<group>"; };
 		E7DCBFCD2B4D44AA00754DAD /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				E79518E92B4EEB9A0053FECA /* BaseCoordinator.swift */,
 				E79518EC2B4EEBC50053FECA /* AppCoordinator.swift */,
 				E79518F02B4EEBFA0053FECA /* FilmListCoordinator.swift */,
+				E79519192B4F27420053FECA /* FilmDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				E79519062B4F019E0053FECA /* FilmDetailLoadingView.swift in Sources */,
 				E79518BF2B4EDB130053FECA /* FilmListLoadingView.swift in Sources */,
 				E79518F32B4EFF4F0053FECA /* FilmDetailServiceProtocol.swift in Sources */,
+				E795191A2B4F27420053FECA /* FilmDetailCoordinator.swift in Sources */,
 				E79518B82B4EDA340053FECA /* FilmListOutput.swift in Sources */,
 				E79518E82B4EEABC0053FECA /* ServiceFactory.swift in Sources */,
 				E79518EF2B4EEBD20053FECA /* CoordinatorFactory.swift in Sources */,

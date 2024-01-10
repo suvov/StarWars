@@ -40,7 +40,16 @@ final class FilmListCoordinator: BaseCoordinator {
     .store(in: &subscriptions)
   }
 
-  private func showFilmDetail(filmId _: Int, filmTitle _: String) {}
+  private func showFilmDetail(filmId: Int, filmTitle: String) {
+    let coordinator = dp
+      .coordinatorFactory
+      .makeFilmDetail(
+        navigationController: dp.navigationController,
+        filmId: filmId, filmTitle: filmTitle
+      )
+    attachChild(coordinator)
+    coordinator.start()
+  }
 
   deinit {
     print("💀 \(type(of: self)) dead")

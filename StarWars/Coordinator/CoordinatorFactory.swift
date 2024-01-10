@@ -42,4 +42,18 @@ final class CoordinatorFactory {
       )
     )
   }
+
+  func makeFilmDetail(
+    navigationController: UINavigationController,
+    filmId: Int, filmTitle: String
+  ) -> FilmDetailCoordinator {
+    FilmDetailCoordinator(
+      dependency: FilmDetailCoordinator.Dependency(
+        navigationController: navigationController,
+        moduleFactory: moduleFactory,
+        filmId: filmId,
+        filmTitle: filmTitle
+      )
+    )
+  }
 }
