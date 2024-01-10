@@ -69,11 +69,8 @@ final class FilmDetailViewModelTests: XCTestCase {
   
   func testEmitsDeinitedOutputAfterRelease() {
     // Given
-    // Given
     let filmDetailResponse = FilmDetailResponse.stub()
     let filmDetailService = FilmsDetailServiceMock(filmDetailResponse)
-    
-    // When
     var vm: FilmDetail.ViewModel? = FilmDetail.ViewModel(
       filmDetailService: filmDetailService, filmId: 0
     )

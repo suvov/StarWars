@@ -21,7 +21,7 @@ final class FilmListCoordinator: BaseCoordinator {
   private var subscriptions = Set<AnyCancellable>()
 
   init(dependency: Dependency) {
-    self.dp = dependency
+    dp = dependency
   }
 
   override func start() {

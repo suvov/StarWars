@@ -1,5 +1,5 @@
 //
-//  FimServiceMock.swift
+//  FilmsServiceMock.swift
 //  StarWarsTests
 //
 //  Created by Vladimir Shutyuk on 10/01/2024.

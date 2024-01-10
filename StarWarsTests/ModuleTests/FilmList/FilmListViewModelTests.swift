@@ -37,7 +37,9 @@ final class FilmListViewModelTests: XCTestCase {
     let filmsResponse = FilmsResponse.generateStub(filmsCount)
     let filmsService = FilmsServiceMock(filmsResponse)
     let vm = FilmList.ViewModel(filmsService: filmsService)
-    let expectation = XCTestExpectation(description: "Loaded \(filmsCount) films.")
+    let expectation = XCTestExpectation(
+      description: "Loaded \(filmsCount) films."
+    )
 
     vm.$state
       .dropFirst() // drop .loading
@@ -107,7 +109,7 @@ final class FilmListViewModelTests: XCTestCase {
         case .deinited:
           break
         default:
-          XCTFail("Expected select output, but got \(output).")
+          XCTFail("Expected .deinited output, but got \(output).")
         }
         expectation.fulfill()
       }

@@ -22,7 +22,7 @@
 		E79518BE2B4EDB130053FECA /* FilmListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518BB2B4EDB130053FECA /* FilmListItemView.swift */; };
 		E79518BF2B4EDB130053FECA /* FilmListLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518BC2B4EDB130053FECA /* FilmListLoadingView.swift */; };
 		E79518CE2B4EDC130053FECA /* FilmListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518CD2B4EDC130053FECA /* FilmListViewModelTests.swift */; };
-		E79518D12B4EDC260053FECA /* FimServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518CF2B4EDC260053FECA /* FimServiceMock.swift */; };
+		E79518D12B4EDC260053FECA /* FilmsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518CF2B4EDC260053FECA /* FilmsServiceMock.swift */; };
 		E79518D22B4EDC260053FECA /* FilmResponse+stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518D02B4EDC260053FECA /* FilmResponse+stub.swift */; };
 		E79518D72B4EDF2C0053FECA /* FilmListView.Model+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518D62B4EDF2C0053FECA /* FilmListView.Model+Equatable.swift */; };
 		E79518D92B4EE03D0053FECA /* FilmList.State+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79518D82B4EE03D0053FECA /* FilmList.State+Equatable.swift */; };
@@ -81,7 +81,7 @@
 		E79518BC2B4EDB130053FECA /* FilmListLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmListLoadingView.swift; sourceTree = "<group>"; };
 		E79518C42B4EDBFF0053FECA /* StarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79518CD2B4EDC130053FECA /* FilmListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmListViewModelTests.swift; sourceTree = "<group>"; };
-		E79518CF2B4EDC260053FECA /* FimServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FimServiceMock.swift; sourceTree = "<group>"; };
+		E79518CF2B4EDC260053FECA /* FilmsServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsServiceMock.swift; sourceTree = "<group>"; };
 		E79518D02B4EDC260053FECA /* FilmResponse+stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FilmResponse+stub.swift"; sourceTree = "<group>"; };
 		E79518D62B4EDF2C0053FECA /* FilmListView.Model+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmListView.Model+Equatable.swift"; sourceTree = "<group>"; };
 		E79518D82B4EE03D0053FECA /* FilmList.State+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmList.State+Equatable.swift"; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 		E79518DC2B4EE1320053FECA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E79518CF2B4EDC260053FECA /* FimServiceMock.swift */,
+				E79518CF2B4EDC260053FECA /* FilmsServiceMock.swift */,
 				E79518D02B4EDC260053FECA /* FilmResponse+stub.swift */,
 				E79518D62B4EDF2C0053FECA /* FilmListView.Model+Equatable.swift */,
 				E79518DA2B4EE0970053FECA /* FimListItemView.Model+Equatable.swift */,
@@ -449,7 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E795190E2B4F21230053FECA /* FilmDetailServiceMock.swift in Sources */,
-				E79518D12B4EDC260053FECA /* FimServiceMock.swift in Sources */,
+				E79518D12B4EDC260053FECA /* FilmsServiceMock.swift in Sources */,
 				E79518DE2B4EE1A70053FECA /* FilmListAdapterTests.swift in Sources */,
 				E79518CE2B4EDC130053FECA /* FilmListViewModelTests.swift in Sources */,
 				E79518D72B4EDF2C0053FECA /* FilmListView.Model+Equatable.swift in Sources */,

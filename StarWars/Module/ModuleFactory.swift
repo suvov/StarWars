@@ -11,6 +11,6 @@ final class ModuleFactory {
   init(serviceFactory: ServiceFactory) {
     self.serviceFactory = serviceFactory
   }
-  
+
   let serviceFactory: ServiceFactory
 }

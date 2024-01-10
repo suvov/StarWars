@@ -19,7 +19,7 @@ final class AppCoordinator: BaseCoordinator {
   private let dp: Dependency
 
   init(dependency: Dependency) {
-    self.dp = dependency
+    dp = dependency
     super.init()
   }
 
