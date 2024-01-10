@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E738F31B2B4EB44C00433E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E738F31A2B4EB44C00433E6E /* Assets.xcassets */; };
 		E74B53202B4EB54400D7F488 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531D2B4EB54400D7F488 /* APIError.swift */; };
 		E74B53212B4EB54400D7F488 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531E2B4EB54400D7F488 /* APIClient.swift */; };
 		E74B53222B4EB54400D7F488 /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */; };
 		E74B53242B4EC4EC00D7F488 /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B53232B4EC4EC00D7F488 /* StarWarsService.swift */; };
 		E74B53272B4EC52600D7F488 /* FilmsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B53262B4EC52600D7F488 /* FilmsServiceProtocol.swift */; };
 		E74B532B2B4EC60800D7F488 /* FilmsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B532A2B4EC60800D7F488 /* FilmsResponse.swift */; };
+		E79518A62B4ED0C50053FECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79518A52B4ED0C50053FECA /* Assets.xcassets */; };
 		E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */; };
 		E7DCBFE32B4D460E00754DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E738F31A2B4EB44C00433E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E74B531D2B4EB54400D7F488 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E74B531E2B4EB54400D7F488 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
 		E74B53232B4EC4EC00D7F488 /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 		E74B53262B4EC52600D7F488 /* FilmsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsServiceProtocol.swift; sourceTree = "<group>"; };
 		E74B532A2B4EC60800D7F488 /* FilmsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsResponse.swift; sourceTree = "<group>"; };
+		E79518A52B4ED0C50053FECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7DCBFCD2B4D44AA00754DAD /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,14 +42,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E738F3192B4EB44C00433E6E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E738F31A2B4EB44C00433E6E /* Assets.xcassets */,
-			);
-			path = Other;
-			sourceTree = SOURCE_ROOT;
-		};
 		E74B531C2B4EB54400D7F488 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +62,15 @@
 			);
 			path = Service;
 			sourceTree = "<group>";
+		};
+		E79518A42B4ED0C50053FECA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E79518A52B4ED0C50053FECA /* Assets.xcassets */,
+			);
+			name = Other;
+			path = StarWars/Other;
+			sourceTree = SOURCE_ROOT;
 		};
 		E7DCBFC42B4D44AA00754DAD = {
 			isa = PBXGroup;
@@ -92,7 +93,7 @@
 			children = (
 				E7DCBFE42B4D470A00754DAD /* Launch */,
 				E74B53252B4EC4F100D7F488 /* Service */,
-				E738F3192B4EB44C00433E6E /* Other */,
+				E79518A42B4ED0C50053FECA /* Other */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -165,7 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E738F31B2B4EB44C00433E6E /* Assets.xcassets in Resources */,
+				E79518A62B4ED0C50053FECA /* Assets.xcassets in Resources */,
 				E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
