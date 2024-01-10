@@ -254,8 +254,8 @@
 			children = (
 				E7DCBFE42B4D470A00754DAD /* Launch */,
 				E79518EB2B4EEBA30053FECA /* Coordinator */,
-				E74B53252B4EC4F100D7F488 /* Service */,
 				E79518AA2B4ED9410053FECA /* Module */,
+				E74B53252B4EC4F100D7F488 /* Service */,
 				E79518A42B4ED0C50053FECA /* Other */,
 			);
 			path = StarWars;
