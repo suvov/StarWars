@@ -50,6 +50,8 @@
 		E79519102B4F21880053FECA /* FilmDetailResponse+stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E795190F2B4F21880053FECA /* FilmDetailResponse+stub.swift */; };
 		E79519122B4F22670053FECA /* FilmDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519112B4F22670053FECA /* FilmDetailViewModelTests.swift */; };
 		E79519142B4F23670053FECA /* FilmDetail.State+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519132B4F23670053FECA /* FilmDetail.State+Equatable.swift */; };
+		E79519162B4F26020053FECA /* ModuleFactory+filmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519152B4F26020053FECA /* ModuleFactory+filmDetail.swift */; };
+		E79519182B4F26550053FECA /* FilmDetail+Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79519172B4F26550053FECA /* FilmDetail+Screen.swift */; };
 		E7DCBFE12B4D45B900754DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */; };
 		E7DCBFE32B4D460E00754DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -109,6 +111,8 @@
 		E795190F2B4F21880053FECA /* FilmDetailResponse+stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmDetailResponse+stub.swift"; sourceTree = "<group>"; };
 		E79519112B4F22670053FECA /* FilmDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModelTests.swift; sourceTree = "<group>"; };
 		E79519132B4F23670053FECA /* FilmDetail.State+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmDetail.State+Equatable.swift"; sourceTree = "<group>"; };
+		E79519152B4F26020053FECA /* ModuleFactory+filmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModuleFactory+filmDetail.swift"; sourceTree = "<group>"; };
+		E79519172B4F26550053FECA /* FilmDetail+Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmDetail+Screen.swift"; sourceTree = "<group>"; };
 		E7DCBFCD2B4D44AA00754DAD /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 		E79518F82B4F005C0053FECA /* FilmDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E79519152B4F26020053FECA /* ModuleFactory+filmDetail.swift */,
 				E79518FA2B4F00920053FECA /* FilmDetailOutput.swift */,
 				E79518F92B4F00790053FECA /* Private */,
 			);
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				E79518F62B4F00590053FECA /* FilmDetail.swift */,
+				E79519172B4F26550053FECA /* FilmDetail+Screen.swift */,
 				E79518FF2B4F00D60053FECA /* FilmDetail+ViewModel.swift */,
 				E79519012B4F00F40053FECA /* FilmDetail+Adapter.swift */,
 				E79518FE2B4F00B80053FECA /* View */,
@@ -471,6 +477,7 @@
 				E74B532B2B4EC60800D7F488 /* FilmsResponse.swift in Sources */,
 				E79518E02B4EE8FF0053FECA /* FilmList+Screen.swift in Sources */,
 				E74B53242B4EC4EC00D7F488 /* StarWarsService.swift in Sources */,
+				E79519162B4F26020053FECA /* ModuleFactory+filmDetail.swift in Sources */,
 				E79518BE2B4EDB130053FECA /* FilmListItemView.swift in Sources */,
 				E74B53272B4EC52600D7F488 /* FilmsServiceProtocol.swift in Sources */,
 				E74B53222B4EB54400D7F488 /* URLSessionAPIClient.swift in Sources */,
@@ -491,6 +498,7 @@
 				E79518F12B4EEBFA0053FECA /* FilmListCoordinator.swift in Sources */,
 				E79519002B4F00D60053FECA /* FilmDetail+ViewModel.swift in Sources */,
 				E79518E22B4EE9BA0053FECA /* ModuleFactory+filmList.swift in Sources */,
+				E79519182B4F26550053FECA /* FilmDetail+Screen.swift in Sources */,
 				E79518B62B4EDA0E0053FECA /* FilmList+Adapter.swift in Sources */,
 				E79518BD2B4EDB130053FECA /* FlimListView.swift in Sources */,
 				E79518EA2B4EEB9A0053FECA /* BaseCoordinator.swift in Sources */,

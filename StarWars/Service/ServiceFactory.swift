@@ -13,4 +13,8 @@ final class ServiceFactory {
   var filmsService: FilmsServiceProtocol {
     starWarsService
   }
+
+  var filmDetailService: FilmDetailServiceProtocol {
+    starWarsService
+  }
 }
