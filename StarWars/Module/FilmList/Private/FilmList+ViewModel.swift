@@ -44,10 +44,10 @@ extension FilmList {
     private func loadFilms() {
       filmsService.getFilms()
         .map {
-          FilmList.State.loaded(Adapter.adaptFilmsResponse($0))
+          State.loaded(Adapter.adaptFilmsResponse($0))
         }
         .catch { error in
-          Just(FilmList.State.error(Adapter.adaptError(error)))
+          Just(State.error(Adapter.adaptError(error)))
         }
         .receive(on: DispatchQueue.main)
         .sink { [weak self] in

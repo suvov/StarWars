@@ -27,9 +27,9 @@ extension FilmDetail {
     }
 
     @Published
-    var state: FilmDetail.State = .loading
+    var state: State = .loading
 
-    func onEvent(_ event: FilmDetail.Event) {
+    func onEvent(_ event: Event) {
       switch event {
       case .load:
         loadFilmDetail()
