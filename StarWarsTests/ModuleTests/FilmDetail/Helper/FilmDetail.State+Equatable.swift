@@ -12,13 +12,13 @@ extension FilmDetail.State: Equatable {
   static public func ==(lhs: Self, rhs: Self) -> Bool {
     switch (lhs, rhs) {
     case (.loading, .loading):
-      return true
+      true
     case (.error(let lhsError), .error(let rhsError)):
-      return lhsError == rhsError
+      lhsError == rhsError
     case (.loaded(let lhsModel), .loaded(let rhsModel)):
-      return lhsModel == rhsModel
+      lhsModel == rhsModel
     default:
-      return false
+      false
     }
   }
 }

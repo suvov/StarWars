@@ -14,9 +14,9 @@ enum APIError: LocalizedError {
   var errorDescription: String? {
     switch self {
     case .invalidResponse:
-      return "Invalid response."
+      "Invalid response."
     case .invalidData:
-      return "Invalid data."
+      "Invalid data."
     }
   }
 }
