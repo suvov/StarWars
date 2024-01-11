@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol APIEndpoint {
-  var baseURL: URL { get }
+  var baseURL: URL? { get }
   var path: String { get }
   var method: HTTPMethod { get }
 }

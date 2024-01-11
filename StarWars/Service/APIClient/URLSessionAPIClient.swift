@@ -16,7 +16,10 @@ final class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
   }
 
   func request<T: Decodable>(_ endpoint: EndpointType) -> AnyPublisher<T, Error> {
-    let url = endpoint.baseURL.appendingPathComponent(endpoint.path)
+    guard let baseURL = endpoint.baseURL else {
+      return Fail(error: APIError.invalidURL).eraseToAnyPublisher()
+    }
+    let url = baseURL.appendingPathComponent(endpoint.path)
     var request = URLRequest(url: url)
     request.httpMethod = endpoint.method.rawValue
 

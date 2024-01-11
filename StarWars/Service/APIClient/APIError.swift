@@ -10,6 +10,7 @@ import Foundation
 enum APIError: LocalizedError {
   case invalidResponse
   case invalidData
+  case invalidURL
 
   var errorDescription: String? {
     switch self {
@@ -17,6 +18,8 @@ enum APIError: LocalizedError {
       "Invalid response."
     case .invalidData:
       "Invalid data."
+    case .invalidURL:
+      "Invalid URL."
     }
   }
 }

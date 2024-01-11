@@ -38,8 +38,8 @@ private enum StarWarsEndpoint: APIEndpoint {
   case getFilms
   case getFilmDetail(filmId: Int)
 
-  var baseURL: URL {
-    URL(string: "https://swapi.dev/api")!
+  var baseURL: URL? {
+    URL(string: "https://swapi.dev/api")
   }
 
   var path: String {
