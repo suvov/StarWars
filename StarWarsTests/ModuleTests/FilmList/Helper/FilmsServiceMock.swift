@@ -19,15 +19,11 @@ struct FilmsServiceMock: FilmsServiceProtocol {
   }
 
   func getFilms() -> AnyPublisher<FilmsResponse, Error> {
-    Just(filmsResponse)
+    if let error {
+      return Fail(error: error).eraseToAnyPublisher()
+    }
+    return Just(filmsResponse)
       .setFailureType(to: Error.self)
-      .tryMap {
-        if let error {
-          throw error
-        } else {
-          return $0
-        }
-      }
       .eraseToAnyPublisher()
   }
 }
