@@ -18,18 +18,19 @@ extension FilmDetailCoordinator {
 }
 
 final class FilmDetailCoordinator: BaseCoordinator {
-  private let dp: Dependency
+  private let dependency: Dependency
   private var subscriptions = Set<AnyCancellable>()
 
   init(dependency: Dependency) {
-    dp = dependency
+    self.dependency = dependency
   }
 
   override func start() {
-    let module = dp.moduleFactory
-      .makeFilmDetail(filmId: dp.filmId, filmTitle: dp.filmTitle)
-    dp.navigationController.pushViewController(module.vc, animated: true)
-
+    let module = dependency.moduleFactory
+      .makeFilmDetail(filmId: dependency.filmId, filmTitle: dependency.filmTitle)
+    
+    dependency.navigationController.pushViewController(module.vc, animated: true)
+    
     module.output.sink { [unowned self] output in
       switch output {
       case .deinited:
@@ -40,6 +41,6 @@ final class FilmDetailCoordinator: BaseCoordinator {
   }
 
   deinit {
-    print("💀 \(type(of: self)) deinited")
+    print("💀 \(type(of: self)) dead")
   }
 }
