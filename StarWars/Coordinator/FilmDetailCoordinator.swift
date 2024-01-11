@@ -28,9 +28,9 @@ final class FilmDetailCoordinator: BaseCoordinator {
   override func start() {
     let module = dependency.moduleFactory
       .makeFilmDetail(filmId: dependency.filmId, filmTitle: dependency.filmTitle)
-    
+
     dependency.navigationController.pushViewController(module.vc, animated: true)
-    
+
     module.output.sink { [unowned self] output in
       switch output {
       case .deinited:

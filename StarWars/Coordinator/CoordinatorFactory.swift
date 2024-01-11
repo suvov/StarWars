@@ -43,7 +43,7 @@ final class CoordinatorFactory {
   }
 
   // MARK: Film detail
-  
+
   func makeFilmDetail(
     navigationController: UINavigationController,
     filmId: Int, filmTitle: String

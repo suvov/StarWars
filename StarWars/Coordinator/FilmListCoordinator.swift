@@ -26,7 +26,7 @@ final class FilmListCoordinator: BaseCoordinator {
 
   override func start() {
     let module = dependency.moduleFactory.makeFilmList()
-    
+
     dependency.navigationController
       .setViewControllers([module.vc], animated: false)
 
