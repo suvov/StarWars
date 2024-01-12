@@ -8,13 +8,13 @@
 import Foundation
 
 final class ServiceFactory {
-  private lazy var starWarsService = StarWarsService()
+  private lazy var starWarsNetworkService = StarWarsNetworkService()
 
   var filmsService: FilmsServiceProtocol {
-    starWarsService
+    starWarsNetworkService
   }
 
   var filmDetailService: FilmDetailServiceProtocol {
-    starWarsService
+    starWarsNetworkService
   }
 }

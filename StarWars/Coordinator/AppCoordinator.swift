@@ -16,17 +16,18 @@ extension AppCoordinator {
 }
 
 final class AppCoordinator: BaseCoordinator {
-  private let dp: Dependency
+  private let dependency: Dependency
 
   init(dependency: Dependency) {
-    dp = dependency
+    self.dependency = dependency
     super.init()
   }
 
   override func start() {
     let navigationController = UINavigationController()
-    dp.window.rootViewController = navigationController
-    let coordinator = dp.coordinatorFactory
+    dependency.window.rootViewController = navigationController
+    let coordinator = dependency
+      .coordinatorFactory
       .makeFilmList(navigationController: navigationController)
     attachChild(coordinator)
     coordinator.start()

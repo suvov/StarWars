@@ -9,14 +9,14 @@ import Foundation
 
 enum APIError: LocalizedError {
   case invalidResponse
-  case invalidData
+  case invalidURL
 
   var errorDescription: String? {
     switch self {
     case .invalidResponse:
-      return "Invalid response."
-    case .invalidData:
-      return "Invalid data."
+      "Invalid response."
+    case .invalidURL:
+      "Invalid URL."
     }
   }
 }

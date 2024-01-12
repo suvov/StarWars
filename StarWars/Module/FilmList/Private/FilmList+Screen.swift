@@ -18,7 +18,7 @@ extension FilmList {
         case .loading:
           FilmListLoadingView()
         case let .loaded(model):
-          FilmListView(model: model, onEvent: vm.onEvent(_:))
+          FilmListView(model: model, onEvent: vm.onEvent)
         case let .error(text):
           Text(text)
             .foregroundStyle(.secondary)

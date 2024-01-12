@@ -12,8 +12,7 @@ final class CoordinatorFactory {
   private let moduleFactory: ModuleFactory
 
   init(serviceFactory: ServiceFactory,
-       moduleFactory: ModuleFactory)
-  {
+       moduleFactory: ModuleFactory) {
     self.serviceFactory = serviceFactory
     self.moduleFactory = moduleFactory
   }
@@ -42,6 +41,8 @@ final class CoordinatorFactory {
       )
     )
   }
+
+  // MARK: Film detail
 
   func makeFilmDetail(
     navigationController: UINavigationController,

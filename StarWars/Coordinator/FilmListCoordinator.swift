@@ -17,16 +17,17 @@ extension FilmListCoordinator {
 }
 
 final class FilmListCoordinator: BaseCoordinator {
-  private let dp: Dependency
+  private let dependency: Dependency
   private var subscriptions = Set<AnyCancellable>()
 
   init(dependency: Dependency) {
-    dp = dependency
+    self.dependency = dependency
   }
 
   override func start() {
-    let module = dp.moduleFactory.makeFilmList()
-    dp.navigationController
+    let module = dependency.moduleFactory.makeFilmList()
+
+    dependency.navigationController
       .setViewControllers([module.vc], animated: false)
 
     module.output.sink { [unowned self] output in
@@ -41,10 +42,10 @@ final class FilmListCoordinator: BaseCoordinator {
   }
 
   private func showFilmDetail(filmId: Int, filmTitle: String) {
-    let coordinator = dp
+    let coordinator = dependency
       .coordinatorFactory
       .makeFilmDetail(
-        navigationController: dp.navigationController,
+        navigationController: dependency.navigationController,
         filmId: filmId, filmTitle: filmTitle
       )
     attachChild(coordinator)

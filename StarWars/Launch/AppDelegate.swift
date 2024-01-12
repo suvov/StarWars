@@ -7,25 +7,13 @@
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
-
-  private lazy var appCoordinator: AppCoordinator = {
-    let serviceFactory = ServiceFactory()
-    let moduleFactory = ModuleFactory(serviceFactory: serviceFactory)
-    let coordinatorFactory = CoordinatorFactory(
-      serviceFactory: serviceFactory,
-      moduleFactory: moduleFactory
-    )
-    return coordinatorFactory.makeApp(window: window!)
-  }()
-
-  func application(
-    _: UIApplication,
-    didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil
-  ) -> Bool {
-    appCoordinator.start()
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     return true
+  }
+
+  func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
   }
 }
