@@ -12,6 +12,7 @@
 		E719ACA72B519D49003C32E9 /* StarWarsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACA62B519D49003C32E9 /* StarWarsEndpoint.swift */; };
 		E719ACA92B519D90003C32E9 /* StarWarsAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACA82B519D90003C32E9 /* StarWarsAPIClientProtocol.swift */; };
 		E719ACAB2B519E74003C32E9 /* APIEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACAA2B519E74003C32E9 /* APIEndpointProtocol.swift */; };
+		E719ACE92B51BED7003C32E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACE82B51BED7003C32E9 /* SceneDelegate.swift */; };
 		E74B53202B4EB54400D7F488 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531D2B4EB54400D7F488 /* APIError.swift */; };
 		E74B53212B4EB54400D7F488 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531E2B4EB54400D7F488 /* APIClientProtocol.swift */; };
 		E74B53222B4EB54400D7F488 /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */; };
@@ -78,6 +79,8 @@
 		E719ACA62B519D49003C32E9 /* StarWarsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsEndpoint.swift; sourceTree = "<group>"; };
 		E719ACA82B519D90003C32E9 /* StarWarsAPIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientProtocol.swift; sourceTree = "<group>"; };
 		E719ACAA2B519E74003C32E9 /* APIEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointProtocol.swift; sourceTree = "<group>"; };
+		E719ACE82B51BED7003C32E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E719ACEA2B51C7BC003C32E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E74B531D2B4EB54400D7F488 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E74B531E2B4EB54400D7F488 /* APIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
 		E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
@@ -365,7 +368,9 @@
 			isa = PBXGroup;
 			children = (
 				E7DCBFE22B4D460E00754DAD /* AppDelegate.swift */,
+				E719ACE82B51BED7003C32E9 /* SceneDelegate.swift */,
 				E7DCBFE02B4D45B900754DAD /* LaunchScreen.storyboard */,
+				E719ACEA2B51C7BC003C32E9 /* Info.plist */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				E74B53272B4EC52600D7F488 /* FilmsServiceProtocol.swift in Sources */,
 				E74B53222B4EB54400D7F488 /* URLSessionAPIClient.swift in Sources */,
 				E79519062B4F019E0053FECA /* FilmDetailLoadingView.swift in Sources */,
+				E719ACE92B51BED7003C32E9 /* SceneDelegate.swift in Sources */,
 				E79518BF2B4EDB130053FECA /* FilmListLoadingView.swift in Sources */,
 				E79518F32B4EFF4F0053FECA /* FilmDetailServiceProtocol.swift in Sources */,
 				E795191A2B4F27420053FECA /* FilmDetailCoordinator.swift in Sources */,
@@ -716,10 +722,10 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWars/Launch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -750,10 +756,10 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWars/Launch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
