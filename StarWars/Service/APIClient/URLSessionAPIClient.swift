@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
+final class URLSessionAPIClient<EndpointType: APIEndpointProtocol>: APIClientProtocol {
   func request(_ endpoint: EndpointType) -> AnyPublisher<Data, Error> {
     guard let baseURL = endpoint.baseURL else {
       return Fail(error: APIError.invalidURL).eraseToAnyPublisher()
