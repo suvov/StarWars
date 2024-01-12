@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E719ACA12B518424003C32E9 /* StarWarsJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACA02B518424003C32E9 /* StarWarsJSONDecoder.swift */; };
+		E719ACA32B5186BC003C32E9 /* StarWarsJSONDecoderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719ACA22B5186BC003C32E9 /* StarWarsJSONDecoderError.swift */; };
 		E74B53202B4EB54400D7F488 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531D2B4EB54400D7F488 /* APIError.swift */; };
 		E74B53212B4EB54400D7F488 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531E2B4EB54400D7F488 /* APIClient.swift */; };
 		E74B53222B4EB54400D7F488 /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E719ACA02B518424003C32E9 /* StarWarsJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsJSONDecoder.swift; sourceTree = "<group>"; };
+		E719ACA22B5186BC003C32E9 /* StarWarsJSONDecoderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsJSONDecoderError.swift; sourceTree = "<group>"; };
 		E74B531D2B4EB54400D7F488 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E74B531E2B4EB54400D7F488 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E74B531F2B4EB54400D7F488 /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				E74B53262B4EC52600D7F488 /* FilmsServiceProtocol.swift */,
 				E79518F42B4EFF640053FECA /* FilmDetailResponse.swift */,
 				E79518F22B4EFF4F0053FECA /* FilmDetailServiceProtocol.swift */,
+				E719ACA02B518424003C32E9 /* StarWarsJSONDecoder.swift */,
+				E719ACA22B5186BC003C32E9 /* StarWarsJSONDecoderError.swift */,
 				E74B531C2B4EB54400D7F488 /* APIClient */,
 			);
 			path = Service;
@@ -496,8 +502,10 @@
 				E79518F72B4F00590053FECA /* FilmDetail.swift in Sources */,
 				E79518B22B4ED9E50053FECA /* FilmList+ViewModel.swift in Sources */,
 				E7DCBFE32B4D460E00754DAD /* AppDelegate.swift in Sources */,
+				E719ACA12B518424003C32E9 /* StarWarsJSONDecoder.swift in Sources */,
 				E79518F52B4EFF640053FECA /* FilmDetailResponse.swift in Sources */,
 				E79518E62B4EEA910053FECA /* ModuleFactory.swift in Sources */,
+				E719ACA32B5186BC003C32E9 /* StarWarsJSONDecoderError.swift in Sources */,
 				E79518ED2B4EEBC50053FECA /* AppCoordinator.swift in Sources */,
 				E79518F12B4EEBFA0053FECA /* FilmListCoordinator.swift in Sources */,
 				E79519002B4F00D60053FECA /* FilmDetail+ViewModel.swift in Sources */,

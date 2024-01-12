@@ -14,21 +14,24 @@ private typealias ServiceProtocols = FilmDetailServiceProtocol
 // MARK: Service
 
 final class StarWarsService: ServiceProtocols {
-  private let apiClient: URLSessionAPIClient = {
-    let decoder = JSONDecoder()
-    decoder.keyDecodingStrategy = .convertFromSnakeCase
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd"
-    decoder.dateDecodingStrategy = .formatted(dateFormatter)
-    return URLSessionAPIClient<StarWarsEndpoint>(jsonDecoder: decoder)
-  }()
+  private let apiClient = URLSessionAPIClient<StarWarsEndpoint>()
 
   func getFilms() -> AnyPublisher<FilmsResponse, Error> {
     apiClient.request(.getFilms)
+      .tryMap { data in
+        try StarWarsJSONDecoder
+          .decode(FilmsResponse.self, from: data)
+      }
+      .eraseToAnyPublisher()
   }
 
   func getFilmDetail(filmId: Int) -> AnyPublisher<FilmDetailResponse, Error> {
     apiClient.request(.getFilmDetail(filmId: filmId))
+      .tryMap { data in
+        try StarWarsJSONDecoder
+          .decode(FilmDetailResponse.self, from: data)
+      }
+      .eraseToAnyPublisher()
   }
 }
 
